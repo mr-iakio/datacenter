@@ -12,6 +12,16 @@ import numpy as np
 #inputFile = 'dc.in'
 inputFile = 'basic.txt'
 problem = ODC.readFile(inputFile)
+basicSolution = [[0,1,0],[1,0,1],[1,3,0],[0,4,1],['x']]
+val = ODC.getRowCapacity(problem,1,1,basicSolution)
+print(val)
+
+
+
+
+
+
+
 
 #ServerSize = 3
 #row = 1

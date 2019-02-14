@@ -129,8 +129,17 @@ def definePools(stackServer, Npools):
     
     return pools
 
-def gCapacity(stackServer,pools,servers):
-    ok = 1
+def getRowCapacity(problem,row,pool,solution):
+    
+    output = 0;
+    count = -1;
+    for server in solution:
+        count += 1
+        if server[0]!='x' and server[2]==pool and server[0]==row:
+            output = output+problem.serverList[count][1]
+            
+    return output
+            
     
     
     
