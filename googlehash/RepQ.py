@@ -17,6 +17,14 @@ def read_file(inputFile):
         cPhoto = Photo(newLine[0], newLine[2:])
         output.append(cPhoto)
     return output
+# def repair(solution):
+#     currSol = solution[:]
+#     max_val = max(currSol)
+#     for k in range(max_val):
+#         indices = [i for i, x in enumerate(ok) if x == k]
+#         if len(indices)>2:
+#             randN = random.sample(len(indices),len(indices))
+#             [currSol[randN[2:]]
 
 def advanced_initial_population(nPopulation, problem):
     output = []
