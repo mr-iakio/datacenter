@@ -17,8 +17,12 @@ class Individual:
 
     def fit(self, problem):
 
+        maxphotosinslide = max([len(slide) for slide in self.slidelist])
+        if maxphotosinslide > 2:
+            return -1
+
         if len(self.slidelist)<=1:
-            return 0;
+            return 0
         else:
             interests = [self.interest(i, i+1, problem) for i in list(range(len(self.slidelist)-1))]
             return sum(interests)
