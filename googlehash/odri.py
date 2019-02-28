@@ -21,6 +21,14 @@ class Individual:
         if maxphotosinslide > 2:
             return -1
 
+        for slide in self.slidelist:
+            if len(slide) ==2:
+                if problem[slide[0]].orient == "H" or problem[slide[1]].orient == "H":
+                    return -1
+            if len(slide) == 2:
+                if problem[slide[0]].orient == "V":
+                    return -1
+
         if len(self.slidelist)<=1:
             return 0
         else:
