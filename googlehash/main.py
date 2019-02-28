@@ -4,17 +4,16 @@ Created on Thu Feb  7 19:03:29 2019
 
 @author: angel
 """
-
-import ODC
-import time
+import RepQ
 import random
 import numpy as np
 
 ############## INPUT FILE ##############
-print 'The code is running!'
+print('The code is running!')
+RepQ.dummy()
 inputFile = 'dc.in'
-# inputFile = 'basic.txt'
-problem = ODC.readFile(inputFile)
-dataCenterInit = problem.uSlotList[:]
+# # inputFile = 'basic.txt'
+# problem = ODC.readFile(inputFile)
+# dataCenterInit = problem.uSlotList[:]
 
 ################ GENETIC ALGORITHM #################
