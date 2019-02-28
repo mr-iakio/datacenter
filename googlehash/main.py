@@ -17,6 +17,20 @@ inputFile = 'a_example.txt' #4 photos
 # inputFile = 'd_pet_pictures.txt' #90000 photos
 # inputFile = 'e_shiny_selfies.txt' #80000 photos
 
-photos = read_file(inputFile)
+problem = read_file(inputFile)
 
 ################ GENETIC ALGORITHM #################
+
+ok = advanced_initial_population(4, problem)
+print(ok)
+
+# ok = initial_population(4,problem)
+
+# ok1 = [1,2,3,4,5]
+# ok2 = [6,7,8,9,10]
+#
+# oknew = new_generation(ok1, ok2)
+
+# print(oknew[0])
+# print(oknew[1])
+
